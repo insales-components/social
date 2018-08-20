@@ -1,0 +1,13 @@
+{% if block_lists.with_template['system-social'].social.blocks.size > 0 %}
+<ul class="social-menu list {{ social_class }}">
+  {% for group in block_lists.with_template['system-social'].social.blocks %}
+    {% assign icon_name = group.link | replace: 'www.', '' | replace: 'http://', '' | replace: 'https://', '' | split: '/' | first | replace: '.ru', '' | replace: '.com', '' | replace: '.', '_' | replace: ' ', '_' %}
+    <li class="social-menu-item list-item">
+      <a target="blank" title='{{ group.title }}' href="{{ group.link }}" class="social-menu-link is-{{ icon_name }}">
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% assign icon_name = nil %}

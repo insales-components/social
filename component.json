@@ -1,0 +1,13 @@
+{
+  "name": "social",
+  "version": "1.0.0",
+  "description": "Социальные сети",
+  "author": "LiquidHub.ru",
+  "type": "snippets",
+  "homepage": "https://github.com/insales-components/social",
+  "props": {
+    "common": false,
+    "liquid": true
+  },
+  "dependencies": {}
+}

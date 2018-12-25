@@ -9,5 +9,7 @@
     "common": false,
     "liquid": true
   },
-  "dependencies": {}
+  "dependencies": {
+    "ui-list": "https://github.com/insales-components/ui-list"
+  }
 }
